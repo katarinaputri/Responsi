@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity_home_chat"
+    android:orientation="vertical"
+    android:background="@drawable/gradient_drawable">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/foto1"
+                android:layout_width="97dp"
+                android:layout_height="79dp"
+                android:src="@drawable/channels4_profile"
+                tools:layout_editor_absoluteX="20dp"
+                tools:layout_editor_absoluteY="64dp" />
+
+
+            <TextView
+                android:id="@+id/chat1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="100dp"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/redhatdisplay_regular"
+                android:text="Nama1"
+                android:textColor="@color/white"
+                android:textSize="9pt"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/chat11"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="100dp"
+                android:fontFamily="@font/redhatdisplay_regular"
+                android:text="halo"
+                android:textColor="@color/white"
+                android:textSize="6pt"
+                android:textStyle="bold"
+                app:layout_constraintTop_toBottomOf="@id/chat1" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/chat2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="100dp"
+                android:layout_marginTop="40dp"
+                android:fontFamily="@font/redhatdisplay_regular"
+                android:text="Nama2"
+                android:textColor="@color/white"
+                android:textSize="9pt"
+                android:textStyle="bold"
+                app:layout_constraintTop_toBottomOf="@id/chat11" />
+
+            <TextView
+                android:id="@+id/chat22"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="100dp"
+                android:fontFamily="@font/redhatdisplay_regular"
+                android:text="hai"
+                android:textColor="@color/white"
+                android:textSize="6pt"
+                android:textStyle="bold"
+                app:layout_constraintTop_toBottomOf="@id/chat2" />
+
+        </LinearLayout>
+    </ScrollView>
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/foto2"
+        android:layout_width="97dp"
+        android:layout_height="79dp"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/channels4_profile"
+        app:layout_constraintEnd_toStartOf="@id/chat2"
+        app:layout_constraintTop_toBottomOf="@id/foto1" />
+
+
+</LinearLayout>

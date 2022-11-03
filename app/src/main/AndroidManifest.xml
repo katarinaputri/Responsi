@@ -14,6 +14,19 @@
         android:theme="@style/Theme.NgobrolKuy"
         tools:targetApi="31">
         <activity
+            android:name=".HasilLupaPassActivity"
+            android:exported="false" />
+        <activity
+            android:name=".LupaPassActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.login.activity_lupas_pass"
+            android:exported="false"
+            android:label="@string/title_activity_lupas_pass" />
+        <activity
+            android:name=".activity_home_chat"
+            android:exported="false" />
+        <activity
             android:name=".ProfilePicActivity"
             android:exported="false" />
         <activity
